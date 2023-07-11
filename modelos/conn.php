@@ -23,5 +23,7 @@ class Conn{
         $this->conexion = NULL;
     }
 
-
+     
 }
+
+
