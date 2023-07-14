@@ -1,0 +1,81 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    margin: 0;
+  }
+
+  .container {
+    margin-top: 20px;
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+    background-color: #bdbdbd;
+    border-radius: 8px;
+  }
+
+  .container label,
+  .container input,
+  .container select {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  button[type="submit"] {
+    background-color: rgb(255, 0, 0);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+
+  /* Estilos para el título "REGISTRAR PEDIDO" */
+.titulo {
+    text-align: center;
+  }
+  
+  /* Estilos para la imagen de la motocicleta */
+  .motocicleta {
+    width: 200px;
+    margin-left: 20px;
+    border-radius: 15px;
+  }
+
+  /* Estilos para el contenedor del título y la imagen */
+.titulo-contenedor {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .titulo {
+    margin-right: 20px;
+  }
+  
+  .motocicleta {
+    width: 100px;
+  }
+
+  /* Estilos para las etiquetas */
+.etiqueta {
+  font-weight: bold;
+  color: rgb(195, 0, 255);
+}
+
+/* Estilos para los campos de entrada */
+.campo {
+  width: 94%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid rgb(10, 169, 243);
+  border-radius: 4px;
+}
+
+/* Estilos para las etiquetas */
+.etiqueta {
+    width: 100%;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    font-family: Arial, sans-serif;
+  }

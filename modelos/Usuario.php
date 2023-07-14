@@ -12,7 +12,7 @@ class Usuario{
 
 
     public function mostrar(){
-        $conn = new Conn();
+        $conn = new conexion();
         $conexion = $conn->conectar();
         $sql = "SELECT * FROM cliente";
         $resultado = $conexion->query($sql);
@@ -21,7 +21,7 @@ class Usuario{
     }
 
     public function mostrarPorId($id){
-        $conn = new Conn();
+        $conn = new conexion();
         $conexion = $conn->conectar();
         $sql = "SELECT * FROM cliente WHERE id=$idCliente";
         $resultado = $conexion->query($sql);
@@ -30,7 +30,7 @@ class Usuario{
     }
 
     public function guardar(){
-        $conn = new Conn();
+        $conn = new conexion();
         $conexion = $conn->conectar();
         $sql = "INSERT INTO cliente(usuario, password, ruc, nombre, direccion, telefono) 
                 VALUES('".$this->usuario."', '".$this->password."', '".$this->ruc."', '".$this->nombre."', '".$this->direccion."', ".$this->telefono."')";
@@ -40,7 +40,7 @@ class Usuario{
     }
 
     public function buscarEmail(){
-        $conn = new Conn();
+        $conn = new conexion();
         $conexion = $conn->conectar();
         $sql = "SELECT * FROM cliente WHERE email='".$this->email."'";
         $resultado = $conexion->query($sql);
